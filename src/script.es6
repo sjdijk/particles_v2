@@ -1,0 +1,2 @@
+var n = [1,2,3];
+console.log(n.find(i=>{return i === 3}));
