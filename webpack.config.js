@@ -1,6 +1,7 @@
- var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
- module.exports = {
+module.exports = {
      entry: './src/script.es6',
      output: {
          path: __dirname + '/dist',
@@ -20,7 +21,13 @@
         new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
+        files: ['*.html', 'css/*.css'],
         server: { baseDir: ['./'] }
+        }),
+        new UglifyJSPlugin({
+            compress: {
+                warnings: false
+            }
         })
     ]
  };
