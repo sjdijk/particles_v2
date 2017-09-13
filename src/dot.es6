@@ -1,18 +1,25 @@
 export default class Dot {
-    constructor(x,y){
+    constructor(x,y ){
         this.props = {
             x: x,
             y: y,
+            size: 10,
+            isDead: false,
+
             vel: {
-                x: Math.random() * 8 - 4,
+                x: Math.random() * 2 - 4,
                 y: Math.random() * 2 - 2
             },
-            gravity: 0.1,
-            color: this.randomColor()
+            color: this.randomColor(),
+            gravity: -0.1
+
         };
     }
 
     move() {
+        if(this.props.y < 0){
+            this.props.isDead = true;
+        }
         this.props.vel.y += this.props.gravity;
     
         this.props.x += this.props.vel.x;
@@ -20,14 +27,13 @@ export default class Dot {
     }
 
     draw(context) {
+        context.beginPath();
+        context.arc(this.props.x, this.props.y, this.props.size, 0, 2*Math.PI);
         context.fillStyle = this.props.color;
-    
-        context.fillRect(
-            this.props.x,
-            this.props.y,
-            10,
-            10
-        );
+        context.stroke();
+        context.fill();
+
+
     }
 
     randomColor() {
