@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62d75291-4e06-4a2c-9e4f-0828e193165f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/script.js" afterPath="$PROJECT_DIR$/dist/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dot.es6" afterPath="$PROJECT_DIR$/src/dot.es6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rect.es6" afterPath="$PROJECT_DIR$/src/rect.es6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script.es6" afterPath="$PROJECT_DIR$/src/script.es6" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -180,7 +175,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21751000" />
+    <option name="totallyTimeSpent" value="22080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
