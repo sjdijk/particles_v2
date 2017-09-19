@@ -20,7 +20,7 @@ export default class Player {
     move() {
 
         if	(this.props.pijltjes.left === true){
-            this.props.x= this.props.x*70;
+            this.props.x= this.props.x+70;
         }
         if( this.props.pijltjes.up === true) {
 
